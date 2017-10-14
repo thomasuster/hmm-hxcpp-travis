@@ -20,6 +20,8 @@ install:
   
   # build hxcpp
   - HMM_HXCPP=$TRAVIS_BUILD_DIR/.haxelib/hxcpp/git
+  - cd $HMM_HXCPP
+  - haxelib dev hxcpp $HMM_HXCPP
   - cd $HMM_HXCPP/tools/hxcpp
   - haxe compile.hxml
   - cd $HMM_HXCPP/tools/build
