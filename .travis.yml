@@ -4,6 +4,7 @@ env:
   - HXCPP_COMPILE_CACHE=~/hxcache
   
 install:
+  - brew update
   - brew install neko haxe
   
   # global haxelib
