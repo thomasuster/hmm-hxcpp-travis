@@ -8,6 +8,7 @@ install:
   - cd ..
   - mkdir haxelib
   - haxelib setup haxelib
+  - cd $TRAVIS_BUILD_DIR
   
   # hmm
   - haxelib --global install hmm
@@ -17,7 +18,6 @@ install:
   - hmm install
   
   # prep hxcpp
-  - cd $TRAVIS_BUILD_DIR
   - HMM_HXCPP=$TRAVIS_BUILD_DIR/.haxelib/hxcpp/git/hxcpp
   - cd $HMM_HXCPP
   
