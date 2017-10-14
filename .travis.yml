@@ -1,7 +1,9 @@
-language: objective-c
-
+os: osx
+osx_image: xcode8.3
+env:
+  - HXCPP_COMPILE_CACHE=~/hxcache
+  
 install:
-  #- brew update
   - brew install neko haxe
   
   # global haxelib
