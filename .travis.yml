@@ -16,6 +16,7 @@ install:
   
   # libs
   - hmm install
+  - haxelib list
   
   # build hxcpp
   - HMM_HXCPP=$TRAVIS_BUILD_DIR/.haxelib/hxcpp/git
