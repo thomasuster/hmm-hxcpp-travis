@@ -5,7 +5,7 @@
       "type": "git",
       "dir": "hxcpp",
       "ref": "master",
-      "url": "git@github.com:HaxeFoundation/hxcpp.git"
+      "url": "https://github.com/HaxeFoundation/hxcpp.git"
     }
   ]
 }
