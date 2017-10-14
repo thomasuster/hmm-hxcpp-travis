@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    {
+      "name": "hxcpp",
+      "type": "git",
+      "dir": "hxcpp",
+      "ref": "master",
+      "url": "git@github.com:HaxeFoundation/hxcpp.git"
+    }
+  ]
+}

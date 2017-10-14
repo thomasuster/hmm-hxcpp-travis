@@ -1,0 +1,33 @@
+language: objective-c
+
+install:
+  - brew update
+  - brew install neko haxe
+  
+  # global haxelib
+  - cd ..
+  - mkdir haxelib
+  - haxelib setup haxelib
+  
+  # hmm
+  - haxelib --global install hmm
+  - haxelib --global run hmm setup
+  
+  # libs
+  - hmm install
+  
+  # prep hxcpp
+  - cd $TRAVIS_BUILD_DIR
+  - HMM_HXCPP=$TRAVIS_BUILD_DIR/.haxelib/hxcpp/git/hxcpp
+  - cd $HMM_HXCPP
+  
+  # build hxcpp
+  - cd $HMM_HXCPP/tools/hxcpp
+  - haxe compile.hxml
+  - cd $HMM_HXCPP/tools/build
+  - haxe compile.hxml
+  - cd $HMM_HXCPP/project
+  - neko build.n 
+  
+before_script:
+script:
