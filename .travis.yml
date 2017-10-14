@@ -28,6 +28,3 @@ install:
   - haxe compile.hxml
   - cd $HMM_HXCPP/project
   - neko build.n 
-  
-before_script:
-script:
